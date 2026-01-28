@@ -1,0 +1,20 @@
+{
+  "score": 72,
+  "factors": [
+    { "label": "Engagement", "value": 80 },
+    { "label": "Policy Coverage", "value": 65 },
+    { "label": "Payment History", "value": 70 }
+  ],
+  "recommendations": [
+    {
+      "id": "r1",
+      "text": "Follow up on renewal proposal",
+      "priority": "High"
+    },
+    {
+      "id": "r2",
+      "text": "Offer multi-policy discount",
+      "priority": "Medium"
+    }
+  ]
+}

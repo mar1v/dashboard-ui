@@ -1,0 +1,9 @@
+{
+  "id": "acc-1",
+  "name": "Acme Corp",
+  "owner": "Alice Johnson",
+  "status": "Active",
+  "triage": "High",
+  "industry": "Manufacturing",
+  "region": "EMEA"
+}

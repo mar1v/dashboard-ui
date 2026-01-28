@@ -1,0 +1,20 @@
+[
+  {
+    "id": "g1",
+    "title": "Increase Portfolio Value",
+    "description": "Grow total portfolio value this quarter",
+    "progress": 72
+  },
+  {
+    "id": "g2",
+    "title": "Policy Retention",
+    "description": "Maintain high renewal rates",
+    "progress": 45
+  },
+  {
+    "id": "g3",
+    "title": "New Client Acquisition",
+    "description": "Acquire new enterprise clients",
+    "progress": 88
+  }
+]

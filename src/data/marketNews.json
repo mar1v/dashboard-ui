@@ -1,0 +1,23 @@
+[
+  {
+    "id": "n1",
+    "title": "Insurance Market Growths",
+    "summary": "Global insurance market shows steady growth.",
+    "details": "Experts predict a 6% YoY growth driven by digital transformation and AI underwriting.",
+    "date": "2026-01-20"
+  },
+  {
+    "id": "n2",
+    "title": "Regulatory Changes in EU",
+    "summary": "Upcoming regulatory updates may impact policies.",
+    "details": "New compliance requirements will affect cross-border insurance operations starting Q3.",
+    "date": "2026-01-18"
+  },
+  {
+    "id": "n3",
+    "title": "AI in Risk Assessment",
+    "summary": "AI adoption is accelerating.",
+    "details": "Insurers adopting ML models report faster underwriting and improved risk prediction.",
+    "date": "2026-01-15"
+  }
+]

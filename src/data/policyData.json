@@ -1,0 +1,11 @@
+[
+  {
+    "id": "p1",
+    "policyNumber": "POL-001",
+      "product": "General Liability",
+      "premium": 1200,
+      "startDate": "2024-01-01",
+      "endDate": "2025-01-01",
+      "status": "Active"
+    }
+]

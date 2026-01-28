@@ -1,0 +1,5 @@
+[
+  { "id": "m1", "label": "Annual Premium", "value": "$1.2M", "trend": "up" },
+  { "id": "m2", "label": "Loss Ratio", "value": "42%", "trend": "down" },
+  { "id": "m3", "label": "Open Policies", "value": "18", "trend": "neutral" }
+]

@@ -1,0 +1,16 @@
+[
+  {
+    "id": "acc-1",
+    "name": "Global Corp",
+    "status": "Active",
+    "triage": "High",
+    "owner": "John Smith"
+  },
+  {
+    "id": "acc-2",
+    "name": "FinTech Ltd",
+    "status": "Pending",
+    "triage": "Medium",
+    "owner": "Anna Brown"
+  }
+]

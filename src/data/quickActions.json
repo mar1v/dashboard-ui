@@ -1,0 +1,26 @@
+[
+  {
+    "id": "a1",
+    "label": "Create Policy",
+    "icon": "plus",
+    "action": "create-policy"
+  },
+  {
+    "id": "a2",
+    "label": "Add Client",
+    "icon": "user",
+    "action": "add-client"
+  },
+  {
+    "id": "a3",
+    "label": "Generate Report",
+    "icon": "report",
+    "action": "generate-report"
+  },
+  {
+    "id": "a4",
+    "label": "Send Message",
+    "icon": "message",
+    "action": "send-message"
+  }
+]
