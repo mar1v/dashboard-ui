@@ -1,19 +1,17 @@
+import { AppLayout } from "@/AppLayout";
+import { AccountPage } from "@/pages/AccountPage";
+import { DashboardPage } from "@/pages/DashboardPage";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { AppLayout } from "./AppLayout";
-import { AccountPage } from "./pages/AccountPage";
-import { DashboardPage } from "./pages/DashboardPage";
 
-function App() {
+export const App = () => {
   return (
     <BrowserRouter>
       <AppLayout>
         <Routes>
           <Route path="/" element={<DashboardPage />} />
-          <Route path="/account/:id" element={<AccountPage />} />
+          <Route path="/account" element={<AccountPage />} />
         </Routes>
       </AppLayout>
     </BrowserRouter>
   );
-}
-
-export default App;
+};

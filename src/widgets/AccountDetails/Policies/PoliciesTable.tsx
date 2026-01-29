@@ -1,6 +1,6 @@
 import policyData from "@/data/policyData.json";
 import { type Policy } from "@/shared/types/policy";
-import { PolicyStatusBadge } from "@/shared/ui/PolicyStatusBadge";
+import { Badge } from "@/shared/ui/Badge";
 
 export function PoliciesTable() {
   const policies = policyData as Policy[];
@@ -36,7 +36,7 @@ export function PoliciesTable() {
               </td>
 
               <td className="px-4 py-3">
-                <PolicyStatusBadge status={policy.status} />
+                <Badge label={policy.status} color="green" />
               </td>
             </tr>
           ))}

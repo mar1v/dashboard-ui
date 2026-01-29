@@ -11,8 +11,8 @@ export function MessageItem({ message, onReply }: Props) {
   const [isReplying, setIsReplying] = useState(false);
 
   return (
-    <div className="rounded-lg border border-gray-100 p-4">
-      <div className="mb-2 flex items-center justify-between">
+    <div className="rounded-lg border border-gray-100 p-3 sm:p-4">
+      <div className="mb-2 flex items-center justify-between gap-2">
         <span className="font-medium text-gray-900">{message.author}</span>
         <span className="text-xs text-gray-500">
           {new Date(message.createdAt).toLocaleDateString()}

@@ -7,5 +7,3 @@ export interface Account {
   triage: Triage;
   owner: string;
 }
-
-export type AccountStatus = "active" | "inactive" | "pending";

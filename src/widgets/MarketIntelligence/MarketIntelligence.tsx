@@ -6,7 +6,7 @@ export const MarketIntelligence = () => {
   const news = newsData as MarketNews[];
 
   return (
-    <div className="bg-white rounded shadow p-4">
+    <div className="bg-white rounded shadow p-3 sm:p-4">
       <h2 className="text-lg font-semibold mb-4">Market Intelligence</h2>
 
       <div>

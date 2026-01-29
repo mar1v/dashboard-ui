@@ -6,7 +6,7 @@ export const PerformanceMetrics = () => {
   const metrics = metricsData as PerformanceMetric[];
 
   return (
-    <div className="bg-white rounded shadow p-4">
+    <div className="bg-white rounded shadow p-3 sm:p-4">
       <h2 className="text-lg font-semibold mb-4">Performance Metrics</h2>
 
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">

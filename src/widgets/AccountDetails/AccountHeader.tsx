@@ -21,7 +21,7 @@ export const AccountHeader = ({ account }: Props) => {
         : "green";
 
   return (
-    <div className="bg-white rounded shadow p-4 flex flex-col gap-3">
+    <div className="bg-white rounded shadow p-3 sm:p-4 flex flex-col gap-3">
       <div className="flex justify-between items-start">
         <div>
           <h1 className="text-xl font-semibold">{account.name}</h1>

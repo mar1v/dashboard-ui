@@ -31,7 +31,7 @@ export function Communication({ messages }: Props) {
   };
 
   return (
-    <section className="rounded-xl border border-gray-200 bg-white p-6 shadow-sm">
+    <section className="rounded-xl border border-gray-200 bg-white p-3 sm:p-6 shadow-sm">
       <h3 className="mb-4 text-lg font-semibold text-gray-900">
         Communication
       </h3>

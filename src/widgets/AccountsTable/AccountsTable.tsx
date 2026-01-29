@@ -18,7 +18,7 @@ export const AccountsTable = () => {
   });
 
   return (
-    <div className="bg-white rounded shadow p-4">
+    <div className="bg-white rounded shadow p-3 sm:p-4">
       <h2 className="text-lg font-semibold mb-4">My Accounts</h2>
 
       <AccountsFilters

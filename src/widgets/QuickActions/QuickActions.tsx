@@ -12,7 +12,7 @@ export const QuickActions = () => {
   };
 
   return (
-    <div className="bg-white rounded shadow p-4">
+    <div className="bg-white rounded shadow p-3 sm:p-4">
       <h2 className="text-lg font-semibold mb-4">Quick Actions</h2>
 
       <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
