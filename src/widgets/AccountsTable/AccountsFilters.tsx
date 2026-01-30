@@ -1,11 +1,13 @@
 import { type Status, type Triage } from "@/shared/types/common";
 import { isStatus, isTriage } from "@/utils/typeGuards";
 
+type FilterValue<T> = T | "All";
+
 interface Props {
-  status: Status | "All";
-  triage: Triage | "All";
-  onStatusChange: (v: Status | "All") => void;
-  onTriageChange: (v: Triage | "All") => void;
+  status: FilterValue<Status>;
+  triage: FilterValue<Triage>;
+  onStatusChange: (v: FilterValue<Status>) => void;
+  onTriageChange: (v: FilterValue<Triage>) => void;
 }
 
 export const AccountsFilters = ({
@@ -14,18 +16,14 @@ export const AccountsFilters = ({
   onStatusChange,
   onTriageChange,
 }: Props) => {
-  const handleStatusChange = (value: string) => {
-    if (value === "All") {
-      onStatusChange("All");
-    } else if (isStatus(value)) {
+  const handleStatusChange = (value: FilterValue<Status>) => {
+    if (value === "All" || isStatus(value)) {
       onStatusChange(value);
     }
   };
 
-  const handleTriageChange = (value: string) => {
-    if (value === "All") {
-      onTriageChange("All");
-    } else if (isTriage(value)) {
+  const handleTriageChange = (value: FilterValue<Triage>) => {
+    if (value === "All" || isTriage(value)) {
       onTriageChange(value);
     }
   };
@@ -34,18 +32,22 @@ export const AccountsFilters = ({
     <div className="flex gap-4 mb-4">
       <select
         value={status}
-        onChange={(e) => handleStatusChange(e.target.value)}
+        onChange={(e) =>
+          handleStatusChange(e.target.value as FilterValue<Status>)
+        }
         className="border rounded px-2 py-1 text-sm"
       >
         <option value="All">All statuses</option>
-        <option value="Active">Active</option>
-        <option value="Pending">Pending</option>
-        <option value="Inactive">Inactive</option>
+        <option value="active">Active</option>
+        <option value="pending">Pending</option>
+        <option value="inactive">Inactive</option>
       </select>
 
       <select
         value={triage}
-        onChange={(e) => handleTriageChange(e.target.value)}
+        onChange={(e) =>
+          handleTriageChange(e.target.value as FilterValue<Triage>)
+        }
         className="border rounded px-2 py-1 text-sm"
       >
         <option value="All">All triage</option>

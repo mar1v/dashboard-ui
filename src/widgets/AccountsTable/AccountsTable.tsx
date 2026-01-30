@@ -12,9 +12,9 @@ export const AccountsTable = () => {
   const [triage, setTriage] = useState<Triage | "All">("All");
 
   const filtered = accounts.filter((acc) => {
-    if (status !== "All" && acc.status !== status) return false;
-    if (triage !== "All" && acc.triage !== triage) return false;
-    return true;
+    const statusMatch = status === "All" || acc.status === status;
+    const triageMatch = triage === "All" || acc.triage === triage;
+    return statusMatch && triageMatch;
   });
 
   return (
